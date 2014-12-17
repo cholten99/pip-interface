@@ -9,4 +9,6 @@
  2. RabbitMQ driver for PHP (for php-amqplib see http://www.rabbitmq.com/tutorials/tutorial-one-php.html)
 3. The Automa library (http://www.getautoma.com/docs/python_integration) -- remember to update the PYTHONPATH!
 
+See [this document](http://goo.gl/TZRmQZ) for full details of the service.
+
 **Beware! If you CTRL+Z rather than CTRL+C a RabbitMQ consuming process it continues to run in the background!**

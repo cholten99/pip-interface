@@ -6,6 +6,7 @@ import time
 import random
 import requests
 import json
+from wtw import wtw_notepad
 def callback(ch, method, properties, body):
   # Ackowledge RabbitMQ
   ch.basic_ack(delivery_tag = method.delivery_tag)
@@ -15,7 +16,8 @@ def callback(ch, method, properties, body):
   resp_dict = json.loads(resp_text.text)
   # Brief pause set processing state via http
   random_pause = random.randint(1, 3)
-  print " [x] Name: %s, age: %s" % (resp_dict["Name"],resp_dict["Age"]) + " -- Sleeping " + str(random_pause) + " seconds"
+  wtw_notepad(resp_dict["Name"], resp_dict["Age"])
+  print(" [x] Sleeping " + str(random_pause) + " seconds")
   time.sleep(random_pause)
   # Set final processing status via http
   post_payload = {'uid': body}

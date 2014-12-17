@@ -12,7 +12,7 @@ $age = $_POST['age'];
 # Insert data into mongoDB and get new uid
 $connection = new MongoClient();
 $collection = $connection->wtwinterface->wtwinterface;
-$data = array('name' => $name, 'age' => $age, 'ProcStatus' => 'Pending');
+$data = array('Name' => $name, 'Age' => $age, 'ProcStatus' => 'Pending');
 $collection->insert($data);
 $uid = $data['_id']; 
 $connection->close();
@@ -22,7 +22,6 @@ $connection = new AMQPConnection('localhost', 5672, 'guest', 'guest');
 $channel = $connection->channel();
 $channel->queue_declare('wtwinterface', false, false, false, false);
 $msg = new AMQPMessage($uid);
-$channel->basic_publish($msg, '', 'test_interface');
+$channel->basic_publish($msg, '', 'wtwinterface');
 $connection->close();
-
 ?>

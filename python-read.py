@@ -3,23 +3,27 @@ import pika
 import pymongo
 from bson.objectid import ObjectId
 import time
+import random
+import requests
+import json
 def callback(ch, method, properties, body):
   # Ackowledge RabbitMQ
   ch.basic_ack(delivery_tag = method.delivery_tag)
   # Get the entry from mongoDB via an http request
-  print body
-#uid_object = ObjectId(body)
-#pip_entry = db.pipinterface.find( { "_id": uid_object } )[0]
+  get_url = "http://bowsy.co.uk/web-to-windows/php-mongo-get.php?uid=" + body
+  resp_text = requests.get(get_url)
+  resp_dict = json.loads(resp_text.text)
   # Brief pause set processing state via http
-#db.pipinterface.update({"_id": uid_object}, {"$set":{"ProcStatus": "Processing"}})
-  random_pause = pip_entry["WaitTime"]
-  print " [x] Received %r" % (pip_entry,) + " -- Sleeping " + str(random_pause) + " seconds"
+  random_pause = random.randint(1, 3)
+  print " [x] Name: %s, age: %s" % (resp_dict["Name"],resp_dict["Age"]) + " -- Sleeping " + str(random_pause) + " seconds"
   time.sleep(random_pause)
   # Set final processing status via http
-#db.pipinterface.update({"_id": uid_object}, {"$set":{"ProcStatus": "Processed"}})
+  post_payload = {'uid': body}
+  post_response = requests.post("http://bowsy.co.uk/web-to-windows/php-mongo-post.php", data = post_payload)
+
 # MAIN : Get uids from RabbitMQ queue
 connection = pika.BlockingConnection(pika.ConnectionParameters("localhost"))
 channel = connection.channel()
-channel.queue_declare(queue='pipinterface')
-channel.basic_consume(callback, queue="pipinterface")
+channel.queue_declare(queue='wtwinterface')
+channel.basic_consume(callback, queue="wtwinterface")
 channel.start_consuming()

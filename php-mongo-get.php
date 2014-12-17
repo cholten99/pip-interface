@@ -3,7 +3,7 @@
 $uid = $_GET["uid"];
 
 $connection = new MongoClient();
-$collection = $connection->pipinterface->pipinterface;
+$collection = $connection->wtwinterface->wtwinterface;
 
 $data = $collection->findOne(array('_id' => new MongoId($uid)));
 

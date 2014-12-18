@@ -1,0 +1,32 @@
+2014-12-18 02:12:08,150 [automa.util.system_info] [WARNING] - Couldn't initialise WMI.
+2014-12-18 02:12:08,198 [automa.util.system_info] [WARNING] - Couldn't read bios information.
+2014-12-18 02:12:08,198 [automa.util.system_info] [INFO] - Windows partition: C:\
+2014-12-18 02:12:08,198 [automa.util.system_info] [WARNING] - Couldn't read windows number.
+2014-12-18 02:12:08,198 [automa.util.system_info] [WARNING] - Couldn't read bios information.
+2014-12-18 02:12:08,198 [automa.util.system_info] [INFO] - Windows partition: C:\
+2014-12-18 02:12:08,200 [automa.util.system_info] [WARNING] - Couldn't read windows number.
+2014-12-18 02:12:08,239 [nvda] [INFO] - Config dir: c:\Users\dave_000\Development\web-to-windows\Automa\userConfig
+2014-12-18 02:12:08,240 [nvda] [INFO] - NVDA version 2014.1
+2014-12-18 02:12:08,240 [nvda] [INFO] - Using Windows version sys.getwindowsversion(major=6, minor=2, build=9200, platform=2, service_pack='')
+2014-12-18 02:12:08,240 [nvda] [INFO] - Using Python version 2.7.6 (default, Nov 10 2013, 19:24:18) [MSC v.1500 32 bit (Intel)]
+2014-12-18 02:12:08,240 [nvda] [INFO] - Using comtypes version 0.6.2
+2014-12-18 02:12:08,371 [nvda] [INFO] - Loaded synthDriver silence
+2014-12-18 02:12:08,371 [nvda] [INFO] - Using wx version 2.8.12.1 (msw-unicode)
+2014-12-18 02:12:08,378 [nvda] [INFO] - Using liblouis version 2.5.3
+2014-12-18 02:12:08,378 [nvda] [INFO] - Loaded braille display driver noBraille, current display has 0 cells.
+2014-12-18 02:12:08,588 [nvda] [INFO] - NVDA initialized
+2014-12-18 02:12:08,601 [automa.api_impl] [INFO] - start('notepad')
+2014-12-18 02:12:08,611 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=9056, name='notepad.exe') at 89916688> to the list of waited for processes.
+2014-12-18 02:12:08,921 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Activity measure <function get_foreground_hwnd at 0x035A6CF0> is not yet constant.
+2014-12-18 02:12:09,236 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Found new processes [<Process(pid=9056, name='notepad.exe') at 89951248>].
+2014-12-18 02:12:09,543 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Process 9056's  CPU utilization 10.0 has not yet calmed.
+2014-12-18 02:12:09,901 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Setting new work window: <ManagedWindow(handle=853128) with title u'Untitled - Notepad' at location <RECT L93, T111, R979, B636> belonging to <Process(pid=9056, name='notepad.exe') at 90644080>>.
+2014-12-18 02:12:09,923 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=853128) with title u'Untitled - Notepad' at location <RECT L93, T111, R979, B636> belonging to <Process(pid=9056, name='notepad.exe') at 90643408>> to ['name: None', 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleEditWindowNVDAObject object at 0x055C0BD0>', 'description: None', 'location: (103, 164, 849, 462)', "value: u''", 'windowHandle: 525480', "windowText: u''", "displayText: u''", 'treeInterceptor: None', 'processID: 9056'].
+2014-12-18 02:12:09,924 [automa.api_impl] [INFO] - write('Hello world!')
+2014-12-18 02:12:09,933 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Work window: <ManagedWindow(handle=853128) with title u'Untitled - Notepad' at location <RECT L93, T111, R979, B636> belonging to <Process(pid=9056, name='notepad.exe') at 89918640>>
+2014-12-18 02:12:10,381 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - New foreground process: 9056
+2014-12-18 02:12:10,381 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=9056, name='notepad.exe') at 91037936> to the list of waited for processes.
+2014-12-18 02:12:10,726 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Updating work window to <ManagedWindow(handle=853128) with title u'Untitled - Notepad' at location <RECT L93, T111, R979, B636> belonging to <Process(pid=9056, name='notepad.exe') at 91038256>>.
+2014-12-18 02:12:10,773 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=853128) with title u'Untitled - Notepad' at location <RECT L93, T111, R979, B636> belonging to <Process(pid=9056, name='notepad.exe') at 91038416>> to ['name: None', 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleEditWindowNVDAObject object at 0x055C0BD0>', 'description: None', 'location: (103, 164, 849, 462)', "value: u'Hello world!'", 'windowHandle: 525480', "windowText: u'Hello world!'", "displayText: u'Hello world!'", 'treeInterceptor: None', 'processID: 9056'].
+2014-12-18 02:12:10,861 [nvda] [INFO] - Exiting
+2014-12-18 02:12:10,946 [automa.drivers.nvda_headless.logHandler_headless] [INFO] - Restored sys.excepthook to <built-in function excepthook>.

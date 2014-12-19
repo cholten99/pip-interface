@@ -10,7 +10,7 @@ def process_message(message):
   message_dict = json.loads(message)
   # Brief pause set processing state via http
   random_pause = random.randint(1, 3)
-#  wtw_notepad(resp_dict["Name"], resp_dict["Age"])
+  wtw_notepad(resp_dict])
   print(" [x] Sleeping " + str(random_pause) + " seconds")
   time.sleep(random_pause)
   # Set final processing status via http

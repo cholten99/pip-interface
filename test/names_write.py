@@ -17,7 +17,7 @@ for loop in range(0, 5):
   name = names_list[loop]
   age = random.randint(1, 99) 
   # Save in mongoDB
-  uid_object = db.wtwinterface.save({"Name": name, "Age": age, "ProcStatus": "Pending"})
+  uid_object = db.wtwinterface.save({"App": 1, "Command": "Add", "Name": name, "Age": age, "ProcStatus": "Pending"})
   uid = str(uid_object)
   # Add to RabbitMQ queue
   channel.basic_publish(exchange='', routing_key="wtwinterface", body=uid)

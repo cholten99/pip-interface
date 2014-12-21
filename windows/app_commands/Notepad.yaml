@@ -1,0 +1,10 @@
+---
+Add: 
+ - 1: Stuff1
+   VarName: Varmint
+ - 2: Stuff2
+ - 3: Stuff3
+Delete:
+  - 1: Stuff4
+  - 2: Stuff5
+  - 3: Stuff6

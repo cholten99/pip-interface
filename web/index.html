@@ -3,31 +3,71 @@
     <title>Web to Windows</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
-    $(function() {
-      $("#test_form").submit(function(event) {
-        event.preventDefault();
-        var $form = $(this);
-        var url = $form.attr('action');
-        var posting = $.post( url, { name: $('#name').val(), age: $('#age').val() } );
-        $('#name').val('');
-        $('#age').val('');
-      });    
-    });
+      var commands;
+
+      function set_command_select() {
+        $('#command_select').find('option').remove();
+        app = $('#app_select').val();
+        $.each(commands[app], function(key, val) {
+          $('#command_select').append($("<option></option>").attr("value", key).text(key));
+        }); 
+      }
+
+      function update_params_div() {
+        app = $('#app_select').val();
+        command = $('#command_select').val();
+        $('#params_div').empty();
+        params = commands[app][command];
+        content = "";
+        $.each(params, function(key,val) {
+          content = content + val.Text + " : " + "<input name='" + val.Text + "'><p/>";
+        });
+        $('#params_div').html(content);
+      }
+
+      $(function() {
+        $.getJSON( "http://bowsy.co.uk/web-to-windows/web/commands.json", function(data) {
+          commands = data;
+          $.each(data, function(key, val) {
+            $('#app_select').append($("<option></option>").attr("value", key).text(key)); 
+          });
+          set_command_select();
+          update_params_div();       
+        });
+
+        $('#app_select').change(function() {
+          set_command_select();
+          update_params_div();
+        });
+
+        $('#command_select').change(function() {
+          update_params_div();
+        });
+ 
+        $("#the_form").submit(function(event) {
+          event.preventDefault();
+          var url = $(this).attr('action');
+          form_data = $('#the_form').serialize();
+          $.post(url, form_data);
+          $('#params_div :input').each(function(key,val) {
+            $(this).val("");
+          });
+        });    
+
+      });
     </script>
   <head>
   <body>
-    <h2>Please enter your information</h2>
-    <form id="test_form" action="form-process.php" method="post">
-      <div>
-        <label>Your name: </label>
-        <input type="text" id="name" name="name">
-        <p/>
+    <h2>Please choose an application and a command</h2>
+    <form id="the_form" action="form-process.php" method="post">
+      <select name="App" id="app_select">
+      </select>
+      <select name="Command" id="command_select">
+      </select>
+      <p/>
+      <div id="params_div">
       </div>
-      <div>
-        <label>Your age: </label>
-        <input type="text" id="age" name="age">
-        <p/>
-      </div>
+      <p/>
       <div>
         <input type="submit" id="submitButton"  name="submitButton" value="Submit">
       </div>

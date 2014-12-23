@@ -9,10 +9,7 @@ def process_message(message):
   # Get the entry from mongoDB via an http request
   message = json.loads(message)
   # Brief pause set processing state via http
-  random_pause = random.randint(1, 3)
   handle_command(message, app_commands)
-  print(" [x] Sleeping " + str(random_pause) + " seconds")
-  time.sleep(random_pause)
   # Set final processing status via http
   uid = message["_id"]["$id"]
   post_payload = {'uid': uid}

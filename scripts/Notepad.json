@@ -1,0 +1,10 @@
+{
+  "Add": { 
+    "Params": [{"Text": "Name"}, {"Text": "Age"}], 
+    "Steps":  [{"Click": "File"}, {"Type": "$Name"}, {"Type": "$Age"}]
+  }, 
+  "Delete": { 
+    "Params": [{"Text": "Deleteable"}], 
+    "Steps":  [{"Click": "File"}, {"Click": "Delete"}, {"Type": "$Deletable"}]
+  }
+}

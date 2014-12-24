@@ -17,16 +17,16 @@
         app = $('#app_select').val();
         command = $('#command_select').val();
         $('#params_div').empty();
-        params = commands[app][command];
+        params = commands[app][command]["Params"];
         content = "";
         $.each(params, function(key,val) {
-          content = content + val.Text + " : " + "<input name='" + val.Text + "'><p/>";
+          content = content + val["Text"] + " : " + "<input name='" + val["Text"] + "'><p/>";
         });
         $('#params_div').html(content);
       }
 
       $(function() {
-        $.getJSON( "http://bowsy.co.uk/web-to-windows/web/commands.json", function(data) {
+        $.getJSON( "http://bowsy.co.uk/web-to-windows/web/get-commands.php", function(data) {
           commands = data;
           $.each(data, function(key, val) {
             $('#app_select').append($("<option></option>").attr("value", key).text(key)); 

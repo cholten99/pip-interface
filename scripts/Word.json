@@ -1,0 +1,10 @@
+{
+  "Names": { 
+    "Params": [{"Text": "Firstname"}, {"Text": "Secondname"}], 
+    "Steps":  [{"Type": "$Firstname"}, {"Type": "$Secondname"}]
+  }, 
+  "Help": { 
+    "Params": [], 
+    "Steps":  [{"Click": "Help"}, {"Click": "About"}]
+  }
+}

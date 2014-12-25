@@ -29,6 +29,26 @@ def handle_command(message, app_commands):
     handle_step(message, step)
 
 def handle_step(message, step):
-  key = step.keys()[0]
-  print key + " : " + step[key] 
-  # Time to implement some of these! http://www.getautoma.com/docs
+  automa_commands = {"Click" : click_command,
+                     "Type" : type_command
+                    }
+  command = step.keys()[0]
+  automa_commands[command](message, step)
+
+def click_command(message, step):
+  clickable = ""
+  if "$" in step["Click"] : 
+    var_name = step["Click"][1:]
+    clickable = message[var_name] 
+  else:
+    clickable = step["Click"]
+  print "Clicking on : " + clickable 
+ 
+def type_command(message, step):
+  type_text = ""
+  if "$" in step["Type"] :
+    var_name = step["Type"][1:]
+    type_text = message[var_name]
+  else:
+    type_text = step["Type"]
+  print "Typing : " + type_text 

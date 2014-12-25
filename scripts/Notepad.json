@@ -1,7 +1,7 @@
 {
   "Add": { 
     "Params": [{"Text": "Name"}, {"Text": "Age"}], 
-    "Steps":  [{"Click": "File"}, {"Type": "$Name"}, {"Type": "$Age"}]
+    "Steps":  [{"Click": "File"}, {"Type": "$Name"}, {"Type": "$Age"}, {"Type": "Boo-ya!"}]
   }, 
   "Delete": { 
     "Params": [{"Text": "Deleteable"}], 

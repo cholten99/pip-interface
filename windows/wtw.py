@@ -30,7 +30,7 @@ def handle_command(message, app_commands):
 def handle_step(message, step):
   automa_commands = {"Click" : click_command,
                      "Type" : type_command,
-                     "Wait_Window" : wait_window_comand
+                     "Wait_Window" : wait_window_command
                     }
   command = step.keys()[0]
   switch_to(message['App'])
@@ -55,4 +55,6 @@ def type_command(message, step):
   write(type_text)
 
 def wait_window_command(message, step):
-  wait_until(window(step["Wait_Window"]).exists)
+  waiting_for = step["Wait_Window"]
+  print "Waiting for : " + waiting_for
+  wait_until(window(waiting_for).exists)	

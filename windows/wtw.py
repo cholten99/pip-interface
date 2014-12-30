@@ -56,5 +56,4 @@ def type_command(message, step):
 
 def wait_window_command(message, step):
   waiting_for = step["Wait_Window"]
-  print "Waiting for : " + waiting_for
-  wait_until(window(waiting_for).exists)	
+  wait_until(Window(waiting_for).exists)	

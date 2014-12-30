@@ -5,6 +5,6 @@
   }, 
   "save": { 
     "Params": [], 
-    "Steps":  [{"Click": "File"}, {"Click": "Save"}, {"Click": "Save"}]
+    "Steps":  [{"Click": "File"}, {"Click": "Save"}, {"Click": "Save"}, {"Wait_Window": "Confirm Save As"}, {"Click": "Yes"}]
   }
 }

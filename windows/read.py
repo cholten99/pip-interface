@@ -1,7 +1,5 @@
 #!/usr/bin/python
 import sys
-import time
-import random
 import requests
 import json
 from wtw import * 
@@ -25,4 +23,5 @@ while True:
   except KeyboardInterrupt:
     exit()
   except:
-    continue
+    print "Unexpected error:", sys.exc_info()[0]
+#    continue

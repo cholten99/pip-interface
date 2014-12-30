@@ -1,4 +1,4 @@
-# from automa.api import *
+from automa.api import *
 import json 
 import pprint
 import ast
@@ -20,6 +20,7 @@ def load_commands():
 def start_apps(app_commands):
   for app_name in app_commands:
     print "Starting " + app_name
+    start(app_name)
  
 def handle_command(message, app_commands):
   print(message)
@@ -33,6 +34,7 @@ def handle_step(message, step):
                      "Type" : type_command
                     }
   command = step.keys()[0]
+  switch_to(message['App'])
   automa_commands[command](message, step)
 
 def click_command(message, step):
@@ -51,4 +53,5 @@ def type_command(message, step):
     type_text = message[var_name]
   else:
     type_text = step["Type"]
-  print "Typing : " + type_text 
+  print "Typing : " + type_text
+  write(type_text)

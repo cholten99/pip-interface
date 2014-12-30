@@ -1,9 +1,9 @@
 {
-  "Names": { 
+  "names": { 
     "Params": [{"Text": "Firstname"}, {"Text": "Secondname"}], 
     "Steps":  [{"Type": "$Firstname"}, {"Type": "\n"}, {"Type": "$Secondname"}, {"Type": "---\n\n"}]
   }, 
-  "Help": { 
+  "help": { 
     "Params": [], 
     "Steps":  [{"Click": "Help"}, {"Click": "About"}]
   }

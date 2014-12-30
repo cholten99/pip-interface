@@ -1,43 +1,25 @@
-2014-12-30 17:22:26,664 [automa.util.system_info] [WARNING] - Couldn't initialise WMI.
-2014-12-30 17:22:26,710 [automa.util.system_info] [WARNING] - Couldn't read bios information.
-2014-12-30 17:22:26,710 [automa.util.system_info] [INFO] - Windows partition: C:\
-2014-12-30 17:22:26,710 [automa.util.system_info] [WARNING] - Couldn't read windows number.
-2014-12-30 17:22:26,710 [automa.util.system_info] [WARNING] - Couldn't read bios information.
-2014-12-30 17:22:26,710 [automa.util.system_info] [INFO] - Windows partition: C:\
-2014-12-30 17:22:26,710 [automa.util.system_info] [WARNING] - Couldn't read windows number.
-2014-12-30 17:22:26,753 [nvda] [INFO] - Config dir: c:\Users\dave_000\Development\web-to-windows\windows\automa\userConfig
-2014-12-30 17:22:26,755 [nvda] [INFO] - NVDA version 2014.1
-2014-12-30 17:22:26,755 [nvda] [INFO] - Using Windows version sys.getwindowsversion(major=6, minor=2, build=9200, platform=2, service_pack='')
-2014-12-30 17:22:26,755 [nvda] [INFO] - Using Python version 2.7.6 (default, Nov 10 2013, 19:24:18) [MSC v.1500 32 bit (Intel)]
-2014-12-30 17:22:26,755 [nvda] [INFO] - Using comtypes version 0.6.2
-2014-12-30 17:22:26,884 [nvda] [INFO] - Loaded synthDriver silence
-2014-12-30 17:22:26,884 [nvda] [INFO] - Using wx version 2.8.12.1 (msw-unicode)
-2014-12-30 17:22:26,890 [nvda] [INFO] - Using liblouis version 2.5.3
-2014-12-30 17:22:26,891 [nvda] [INFO] - Loaded braille display driver noBraille, current display has 0 cells.
-2014-12-30 17:22:27,000 [nvda] [INFO] - NVDA initialized
-2014-12-30 17:22:27,006 [automa.api_impl] [INFO] - start('Word')
-2014-12-30 17:22:27,186 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=7404, name='wordpad.exe') at 78303408> to the list of waited for processes.
-2014-12-30 17:22:27,490 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Activity measure <function get_foreground_hwnd at 0x0340B370> is not yet constant.
-2014-12-30 17:22:27,801 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Found new processes [<Process(pid=10316, name='splwow64.exe') at 78667312>, <Process(pid=7404, name='wordpad.exe') at 79366864>].
-2014-12-30 17:22:27,802 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=10316, name='splwow64.exe') at 78256944> to the list of waited for processes.
-2014-12-30 17:22:28,111 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Process 7404's  CPU utilization 100.0 has not yet calmed.
-2014-12-30 17:22:28,420 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Process 7404's  CPU utilization 10.0 has not yet calmed.
-2014-12-30 17:22:28,806 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Setting new work window: <ManagedWindow(handle=460108) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=7404, name='wordpad.exe') at 78256944>>.
-2014-12-30 17:22:28,826 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=460108) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=7404, name='wordpad.exe') at 78666256>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04AAD870>', 'description: None', 'location: (164, 332, 752, 315)', 'value: None', 'windowHandle: 984216', "windowText: u''", "displayText: u''", 'treeInterceptor: None', 'processID: 7404'].
-2014-12-30 17:22:28,828 [automa.api_impl] [INFO] - start('Notepad')
-2014-12-30 17:22:28,834 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=8784, name='notepad.exe') at 78303600> to the list of waited for processes.
-2014-12-30 17:22:29,140 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Activity measure <function get_foreground_hwnd at 0x0340B370> is not yet constant.
-2014-12-30 17:22:29,447 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Found new processes [<Process(pid=8784, name='notepad.exe') at 79442512>].
-2014-12-30 17:22:29,750 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Process 8784's  CPU utilization 6.9 has not yet calmed.
-2014-12-30 17:22:30,052 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
-2014-12-30 17:22:30,357 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
-2014-12-30 17:22:30,658 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Activity measure <function get_foreground_hwnd at 0x0340B370> is not yet constant.
-2014-12-30 17:22:30,960 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
-2014-12-30 17:22:31,263 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
-2014-12-30 17:22:31,569 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
-2014-12-30 17:22:31,869 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Activity measure <function get_foreground_hwnd at 0x0340B370> is not yet constant.
-2014-12-30 17:22:32,183 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
-2014-12-30 17:22:32,492 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - New foreground process: 10396
-2014-12-30 17:22:32,493 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=10396, name='cmd.exe') at 78305104> to the list of waited for processes.
-2014-12-30 17:22:32,819 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Setting new work window: <ManagedWindow(handle=656618) with title u'Command Prompt - python  read.py' at location <RECT L156, T156, R833, B499> belonging to <Process(pid=10396, name='cmd.exe') at 79482992>>.
-2014-12-30 17:22:32,838 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=656618) with title u'Command Prompt - python  read.py' at location <RECT L156, T156, R833, B499> belonging to <Process(pid=10396, name='cmd.exe') at 79484496>> to ["name: u'Command Prompt - python  read.py'", 'role: ROLE_PANE', 'states: STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.IAccessible.IAccessible object at 0x04BCD750>', 'description: None', 'location: (166, 189, 640, 300)', 'value: None', 'windowHandle: 656618', "windowText: u'Command Prompt - python  read.py'", "displayText: u''", 'treeInterceptor: None', 'processID: 10396'].
+2014-12-30 17:39:58,430 [automa.util.system_info] [WARNING] - Couldn't initialise WMI.
+2014-12-30 17:39:58,476 [automa.util.system_info] [WARNING] - Couldn't read bios information.
+2014-12-30 17:39:58,476 [automa.util.system_info] [INFO] - Windows partition: C:\
+2014-12-30 17:39:58,476 [automa.util.system_info] [WARNING] - Couldn't read windows number.
+2014-12-30 17:39:58,476 [automa.util.system_info] [WARNING] - Couldn't read bios information.
+2014-12-30 17:39:58,476 [automa.util.system_info] [INFO] - Windows partition: C:\
+2014-12-30 17:39:58,476 [automa.util.system_info] [WARNING] - Couldn't read windows number.
+2014-12-30 17:39:58,517 [nvda] [INFO] - Config dir: c:\Users\dave_000\Development\web-to-windows\windows\automa\userConfig
+2014-12-30 17:39:58,519 [nvda] [INFO] - NVDA version 2014.1
+2014-12-30 17:39:58,519 [nvda] [INFO] - Using Windows version sys.getwindowsversion(major=6, minor=2, build=9200, platform=2, service_pack='')
+2014-12-30 17:39:58,519 [nvda] [INFO] - Using Python version 2.7.6 (default, Nov 10 2013, 19:24:18) [MSC v.1500 32 bit (Intel)]
+2014-12-30 17:39:58,519 [nvda] [INFO] - Using comtypes version 0.6.2
+2014-12-30 17:39:58,648 [nvda] [INFO] - Loaded synthDriver silence
+2014-12-30 17:39:58,648 [nvda] [INFO] - Using wx version 2.8.12.1 (msw-unicode)
+2014-12-30 17:39:58,654 [nvda] [INFO] - Using liblouis version 2.5.3
+2014-12-30 17:39:58,654 [nvda] [INFO] - Loaded braille display driver noBraille, current display has 0 cells.
+2014-12-30 17:39:58,812 [nvda] [INFO] - NVDA initialized
+2014-12-30 17:39:58,819 [automa.api_impl] [INFO] - start('word')
+2014-12-30 17:39:59,033 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=10836, name='wordpad.exe') at 78393488> to the list of waited for processes.
+2014-12-30 17:39:59,341 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Activity measure <function get_foreground_hwnd at 0x0344E370> is not yet constant.
+2014-12-30 17:39:59,651 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Found new processes [<Process(pid=10856, name='splwow64.exe') at 78800080>, <Process(pid=10836, name='wordpad.exe') at 79002256>].
+2014-12-30 17:39:59,653 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=10856, name='splwow64.exe') at 78347312> to the list of waited for processes.
+2014-12-30 17:39:59,959 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Process 10836's  CPU utilization 100.0 has not yet calmed.
+2014-12-30 17:40:00,325 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Setting new work window: <ManagedWindow(handle=1049752) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=10836, name='wordpad.exe') at 79002320>>.
+2014-12-30 17:40:00,346 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=1049752) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=10836, name='wordpad.exe') at 79003536>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04AC37D0>', 'description: None', 'location: (164, 332, 752, 315)', 'value: None', 'windowHandle: 787750', "windowText: u''", "displayText: u''", 'treeInterceptor: None', 'processID: 10836'].

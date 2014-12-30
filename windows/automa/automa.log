@@ -1,67 +1,93 @@
-2014-12-30 17:51:46,111 [automa.util.system_info] [WARNING] - Couldn't initialise WMI.
-2014-12-30 17:51:46,157 [automa.util.system_info] [WARNING] - Couldn't read bios information.
-2014-12-30 17:51:46,157 [automa.util.system_info] [INFO] - Windows partition: C:\
-2014-12-30 17:51:46,157 [automa.util.system_info] [WARNING] - Couldn't read windows number.
-2014-12-30 17:51:46,157 [automa.util.system_info] [WARNING] - Couldn't read bios information.
-2014-12-30 17:51:46,157 [automa.util.system_info] [INFO] - Windows partition: C:\
-2014-12-30 17:51:46,157 [automa.util.system_info] [WARNING] - Couldn't read windows number.
-2014-12-30 17:51:46,197 [nvda] [INFO] - Config dir: c:\Users\dave_000\Development\web-to-windows\windows\automa\userConfig
-2014-12-30 17:51:46,200 [nvda] [INFO] - NVDA version 2014.1
-2014-12-30 17:51:46,200 [nvda] [INFO] - Using Windows version sys.getwindowsversion(major=6, minor=2, build=9200, platform=2, service_pack='')
-2014-12-30 17:51:46,200 [nvda] [INFO] - Using Python version 2.7.6 (default, Nov 10 2013, 19:24:18) [MSC v.1500 32 bit (Intel)]
-2014-12-30 17:51:46,200 [nvda] [INFO] - Using comtypes version 0.6.2
-2014-12-30 17:51:46,328 [nvda] [INFO] - Loaded synthDriver silence
-2014-12-30 17:51:46,329 [nvda] [INFO] - Using wx version 2.8.12.1 (msw-unicode)
-2014-12-30 17:51:46,335 [nvda] [INFO] - Using liblouis version 2.5.3
-2014-12-30 17:51:46,335 [nvda] [INFO] - Loaded braille display driver noBraille, current display has 0 cells.
-2014-12-30 17:51:46,447 [nvda] [INFO] - NVDA initialized
-2014-12-30 17:51:46,454 [automa.api_impl] [INFO] - start('word')
-2014-12-30 17:51:46,654 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=11048, name='wordpad.exe') at 78741680> to the list of waited for processes.
-2014-12-30 17:51:46,960 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Activity measure <function get_foreground_hwnd at 0x033D0370> is not yet constant.
-2014-12-30 17:51:47,266 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Found new processes [<Process(pid=11048, name='wordpad.exe') at 78743344>].
-2014-12-30 17:51:47,571 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Process 11048's  CPU utilization 100.0 has not yet calmed.
-2014-12-30 17:51:47,954 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Setting new work window: <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79244848>>.
-2014-12-30 17:51:47,990 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79245040>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04B187F0>', 'description: None', 'location: (164, 332, 752, 315)', 'value: None', 'windowHandle: 852458', "windowText: u''", "displayText: u''", 'treeInterceptor: None', 'processID: 11048'].
-2014-12-30 17:52:20,210 [automa.api_impl] [INFO] - switch_to(u'word')
-2014-12-30 17:52:20,223 [automa.drivers.windows.window] [INFO] - Switching to <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79946192>>. wait=None, use_alt=False
-2014-12-30 17:52:20,226 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=11048, name='wordpad.exe') at 79946576> to the list of waited for processes.
-2014-12-30 17:52:20,546 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Activity measure <function get_foreground_hwnd at 0x033D0370> is not yet constant.
-2014-12-30 17:52:20,864 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Found new processes [<Process(pid=10284, name='dllhost.exe') at 79766768>].
-2014-12-30 17:52:20,867 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=10284, name='dllhost.exe') at 79766576> to the list of waited for processes.
-2014-12-30 17:52:21,289 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79909712>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04C3E430>', 'description: None', 'location: (164, 332, 752, 315)', 'value: None', 'windowHandle: 852458', "windowText: u''", "displayText: u''", 'treeInterceptor: None', 'processID: 11048'].
-2014-12-30 17:52:21,303 [automa.api_impl] [INFO] - write(u'Jane')
-2014-12-30 17:52:21,316 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Work window: <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 78741776>>
-2014-12-30 17:52:21,687 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - New foreground process: 11048
-2014-12-30 17:52:21,688 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=11048, name='wordpad.exe') at 79946032> to the list of waited for processes.
-2014-12-30 17:52:22,026 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Updating work window to <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79946992>>.
-2014-12-30 17:52:22,065 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79947056>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04C3E430>', 'description: None', 'location: (164, 332, 752, 315)', "value: u'Jane\\r'", 'windowHandle: 852458', "windowText: u'Jane'", "displayText: u'Jane'", 'treeInterceptor: None', 'processID: 11048'].
-2014-12-30 17:52:22,065 [automa.api_impl] [INFO] - switch_to(u'word')
-2014-12-30 17:52:22,078 [automa.drivers.windows.window] [INFO] - Switching to <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79947376>>. wait=None, use_alt=False
-2014-12-30 17:52:22,081 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=11048, name='wordpad.exe') at 79947792> to the list of waited for processes.
-2014-12-30 17:52:22,500 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79909936>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04C3E430>', 'description: None', 'location: (164, 332, 752, 315)', "value: u'Jane\\r'", 'windowHandle: 852458', "windowText: u'Jane'", "displayText: u'Jane'", 'treeInterceptor: None', 'processID: 11048'].
-2014-12-30 17:52:22,516 [automa.api_impl] [INFO] - write(u'\n')
-2014-12-30 17:52:22,526 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Work window: <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79912080>>
-2014-12-30 17:52:22,869 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - New foreground process: 11048
-2014-12-30 17:52:22,871 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=11048, name='wordpad.exe') at 79949424> to the list of waited for processes.
-2014-12-30 17:52:23,216 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Updating work window to <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79949776>>.
-2014-12-30 17:52:23,256 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79946480>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04C3E430>', 'description: None', 'location: (164, 332, 752, 315)', "value: u'Jane\\r\\r'", 'windowHandle: 852458', "windowText: u'Jane\\r\\n'", "displayText: u'Jane'", 'treeInterceptor: None', 'processID: 11048'].
-2014-12-30 17:52:23,256 [automa.api_impl] [INFO] - switch_to(u'word')
-2014-12-30 17:52:23,269 [automa.drivers.windows.window] [INFO] - Switching to <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79947344>>. wait=None, use_alt=False
-2014-12-30 17:52:23,269 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=11048, name='wordpad.exe') at 79949264> to the list of waited for processes.
-2014-12-30 17:52:23,667 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 78741968>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04C3E430>', 'description: None', 'location: (164, 332, 752, 315)', "value: u'Jane\\r\\r'", 'windowHandle: 852458', "windowText: u'Jane\\r\\n'", "displayText: u'Jane'", 'treeInterceptor: None', 'processID: 11048'].
-2014-12-30 17:52:23,677 [automa.api_impl] [INFO] - write(u'Smith')
-2014-12-30 17:52:23,687 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Work window: <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 78679344>>
-2014-12-30 17:52:24,062 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - New foreground process: 11048
-2014-12-30 17:52:24,065 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=11048, name='wordpad.exe') at 79829680> to the list of waited for processes.
-2014-12-30 17:52:24,410 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Updating work window to <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79829584>>.
-2014-12-30 17:52:24,446 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79829808>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04C3E430>', 'description: None', 'location: (164, 332, 752, 315)', "value: u'Jane\\rSmith\\r'", 'windowHandle: 852458', "windowText: u'Jane\\r\\nSmith'", "displayText: u'JaneSmith'", 'treeInterceptor: None', 'processID: 11048'].
-2014-12-30 17:52:24,447 [automa.api_impl] [INFO] - switch_to(u'word')
-2014-12-30 17:52:24,453 [automa.drivers.windows.window] [INFO] - Switching to <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79829072>>. wait=None, use_alt=False
-2014-12-30 17:52:24,454 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=11048, name='wordpad.exe') at 79829264> to the list of waited for processes.
-2014-12-30 17:52:24,868 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79859824>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04C3E430>', 'description: None', 'location: (164, 332, 752, 315)', "value: u'Jane\\rSmith\\r'", 'windowHandle: 852458', "windowText: u'Jane\\r\\nSmith'", "displayText: u'JaneSmith'", 'treeInterceptor: None', 'processID: 11048'].
-2014-12-30 17:52:24,882 [automa.api_impl] [INFO] - write(u'---\n\n')
-2014-12-30 17:52:24,894 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Work window: <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79909456>>
-2014-12-30 17:52:25,296 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - New foreground process: 11048
-2014-12-30 17:52:25,296 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=11048, name='wordpad.exe') at 79766128> to the list of waited for processes.
-2014-12-30 17:52:25,647 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Updating work window to <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79766768>>.
-2014-12-30 17:52:25,724 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=590534) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=11048, name='wordpad.exe') at 79768112>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04C3E430>', 'description: None', 'location: (164, 332, 752, 315)', "value: u'Jane\\rSmith---\\r\\r\\r'", 'windowHandle: 852458', "windowText: u'Jane\\r\\nSmith---\\r\\n\\r\\n'", "displayText: u'JaneSmith---'", 'treeInterceptor: None', 'processID: 11048'].
+2014-12-30 17:54:48,739 [automa.util.system_info] [WARNING] - Couldn't initialise WMI.
+2014-12-30 17:54:48,783 [automa.util.system_info] [WARNING] - Couldn't read bios information.
+2014-12-30 17:54:48,783 [automa.util.system_info] [INFO] - Windows partition: C:\
+2014-12-30 17:54:48,783 [automa.util.system_info] [WARNING] - Couldn't read windows number.
+2014-12-30 17:54:48,783 [automa.util.system_info] [WARNING] - Couldn't read bios information.
+2014-12-30 17:54:48,783 [automa.util.system_info] [INFO] - Windows partition: C:\
+2014-12-30 17:54:48,785 [automa.util.system_info] [WARNING] - Couldn't read windows number.
+2014-12-30 17:54:48,826 [nvda] [INFO] - Config dir: c:\Users\dave_000\Development\web-to-windows\windows\automa\userConfig
+2014-12-30 17:54:48,828 [nvda] [INFO] - NVDA version 2014.1
+2014-12-30 17:54:48,829 [nvda] [INFO] - Using Windows version sys.getwindowsversion(major=6, minor=2, build=9200, platform=2, service_pack='')
+2014-12-30 17:54:48,829 [nvda] [INFO] - Using Python version 2.7.6 (default, Nov 10 2013, 19:24:18) [MSC v.1500 32 bit (Intel)]
+2014-12-30 17:54:48,829 [nvda] [INFO] - Using comtypes version 0.6.2
+2014-12-30 17:54:48,961 [nvda] [INFO] - Loaded synthDriver silence
+2014-12-30 17:54:48,961 [nvda] [INFO] - Using wx version 2.8.12.1 (msw-unicode)
+2014-12-30 17:54:48,967 [nvda] [INFO] - Using liblouis version 2.5.3
+2014-12-30 17:54:48,969 [nvda] [INFO] - Loaded braille display driver noBraille, current display has 0 cells.
+2014-12-30 17:54:49,085 [nvda] [INFO] - NVDA initialized
+2014-12-30 17:54:49,104 [automa.api_impl] [INFO] - start('word')
+2014-12-30 17:54:49,295 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=10920, name='wordpad.exe') at 78544208> to the list of waited for processes.
+2014-12-30 17:54:49,601 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Activity measure <function get_foreground_hwnd at 0x033A0370> is not yet constant.
+2014-12-30 17:54:49,911 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Found new processes [<Process(pid=10920, name='wordpad.exe') at 78831824>, <Process(pid=3012, name='splwow64.exe') at 79669712>].
+2014-12-30 17:54:49,911 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=3012, name='splwow64.exe') at 79669328> to the list of waited for processes.
+2014-12-30 17:54:50,220 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Process 10920's  CPU utilization 100.0 has not yet calmed.
+2014-12-30 17:54:50,523 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
+2014-12-30 17:54:50,828 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
+2014-12-30 17:54:51,135 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
+2014-12-30 17:54:51,443 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
+2014-12-30 17:54:51,750 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
+2014-12-30 17:54:52,059 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
+2014-12-30 17:54:52,365 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
+2014-12-30 17:54:52,680 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
+2014-12-30 17:54:52,986 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
+2014-12-30 17:54:53,299 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
+2014-12-30 17:54:53,605 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
+2014-12-30 17:54:53,911 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
+2014-12-30 17:54:54,213 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Cursor is busy.
+2014-12-30 17:54:54,517 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - New foreground process: 8100
+2014-12-30 17:54:54,517 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=8100, name='spotify.exe') at 79669744> to the list of waited for processes.
+2014-12-30 17:54:54,828 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Process 8100's  CPU utilization 30.0 has not yet calmed.
+2014-12-30 17:54:55,141 [automa.drivers.windows.app_starter] [WARNING] - The foreground window <ManagedWindow(handle=328288) with title u'Spotify - The Cult \u2013 Sweet Soul Sister' at location <RECT L0, T0, R1024, B728> belonging to <Process(pid=8100, name='spotify.exe') at 79670992>> does not belong to the started process <Process(pid=10920, name='wordpad.exe') at 79670640>.
+2014-12-30 17:54:55,147 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Setting new work window: <ManagedWindow(handle=656664) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=10920, name='wordpad.exe') at 79671056>>.
+2014-12-30 17:54:55,184 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=656664) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=10920, name='wordpad.exe') at 79671152>> to ["name: u'Radio'", 'role: ROLE_DOCUMENT', 'states: STATE_READONLY, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.IAccessible.chromium.Document object at 0x04B19FF0>', 'description: None', 'location: (201, 58, 670, 777)', "value: u'sp://2db734e27abdfe7026e084cd4e57c87404a16166.radio/index.html'", 'windowHandle: 394508L', "windowText: u''", "displayText: u''", 'treeInterceptor: <NVDAObjects.IAccessible.chromium.ChromeVBuf object at 0x04BFAAD0>', 'processID: 8100'].
+2014-12-30 18:01:52,158 [nvda] [ERROR] - error executing event: mouseMove on <NVDAObjects.IAccessible.IAccessible object at 0x04C1FE70> with extra args of {'y': 130, 'x': 932}
+Traceback (most recent call last):
+  File "eventHandler.pyc", line 136, in executeEvent
+  File "eventHandler.pyc", line 84, in __init__
+  File "eventHandler.pyc", line 91, in next
+  File "NVDAObjects\__init__.pyc", line 805, in event_mouseMove
+  File "NVDAObjects\__init__.pyc", line 909, in makeTextInfo
+  File "textInfos\offsets.pyc", line 264, in __init__
+  File "NVDAObjects\IAccessible\__init__.pyc", line 113, in _getOffsetFromPoint
+COMError: (-2147467259, 'Unspecified error', (None, None, None, 0, None))
+2014-12-30 18:03:00,466 [nvda] [ERROR] - error executing event: mouseMove on <NVDAObjects.IAccessible.IAccessible object at 0x04D6CEF0> with extra args of {'y': 521, 'x': 161}
+Traceback (most recent call last):
+  File "eventHandler.pyc", line 136, in executeEvent
+  File "eventHandler.pyc", line 84, in __init__
+  File "eventHandler.pyc", line 91, in next
+  File "NVDAObjects\__init__.pyc", line 805, in event_mouseMove
+  File "NVDAObjects\__init__.pyc", line 909, in makeTextInfo
+  File "textInfos\offsets.pyc", line 264, in __init__
+  File "NVDAObjects\IAccessible\__init__.pyc", line 113, in _getOffsetFromPoint
+COMError: (-2147467259, 'Unspecified error', (None, None, None, 0, None))
+2014-12-30 18:03:03,591 [nvda] [ERROR] - error executing event: mouseMove on <NVDAObjects.window.Window object at 0x04D6C430> with extra args of {'y': 397, 'x': 765}
+Traceback (most recent call last):
+  File "eventHandler.pyc", line 136, in executeEvent
+  File "eventHandler.pyc", line 84, in __init__
+  File "eventHandler.pyc", line 90, in next
+  File "eventHandler.pyc", line 110, in gen
+  File "NVDAObjects\__init__.pyc", line 338, in _get_treeInterceptor
+  File "treeInterceptorHandler.pyc", line 18, in getTreeInterceptor
+  File "NVDAObjects\IAccessible\chromium.pyc", line 21, in __contains__
+AttributeError: 'Window' object has no attribute 'IA2UniqueID'
+2014-12-30 18:13:16,680 [automa.api_impl] [INFO] - switch_to(u'word')
+2014-12-30 18:13:16,696 [automa.drivers.windows.window] [INFO] - Switching to <ManagedWindow(handle=656664) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=10920, name='wordpad.exe') at 79777168>>. wait=None, use_alt=False
+2014-12-30 18:13:16,697 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=10920, name='wordpad.exe') at 79777232> to the list of waited for processes.
+2014-12-30 18:13:17,029 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Activity measure <function get_foreground_hwnd at 0x033A0370> is not yet constant.
+2014-12-30 18:13:17,401 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=656664) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=10920, name='wordpad.exe') at 78543952>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04BFAA50>', 'description: None', 'location: (164, 332, 752, 315)', 'value: None', 'windowHandle: 1901558', "windowText: u''", "displayText: u''", 'treeInterceptor: None', 'processID: 10920'].
+2014-12-30 18:13:17,407 [automa.api_impl] [INFO] - write(u'Annie')
+2014-12-30 18:13:17,413 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Work window: <ManagedWindow(handle=656664) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=10920, name='wordpad.exe') at 79670672>>
+2014-12-30 18:13:17,785 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - New foreground process: 10920
+2014-12-30 18:13:17,786 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=10920, name='wordpad.exe') at 80424944> to the list of waited for processes.
+2014-12-30 18:13:18,138 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Updating work window to <ManagedWindow(handle=656664) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=10920, name='wordpad.exe') at 80424112>>.
+2014-12-30 18:13:18,178 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=656664) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=10920, name='wordpad.exe') at 80422448>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04BFAA50>', 'description: None', 'location: (164, 332, 752, 315)', "value: u'Annie\\r'", 'windowHandle: 1901558', "windowText: u'Annie'", "displayText: u'Annie'", 'treeInterceptor: None', 'processID: 10920'].
+2014-12-30 18:13:18,178 [automa.api_impl] [INFO] - switch_to(u'word')
+2014-12-30 18:13:18,190 [automa.drivers.windows.window] [INFO] - Switching to <ManagedWindow(handle=656664) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=10920, name='wordpad.exe') at 81183184>>. wait=None, use_alt=False
+2014-12-30 18:13:18,193 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=10920, name='wordpad.exe') at 81183696> to the list of waited for processes.
+2014-12-30 18:13:18,612 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=656664) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=10920, name='wordpad.exe') at 81311920>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04BFAA50>', 'description: None', 'location: (164, 332, 752, 315)', "value: u'Annie\\r'", 'windowHandle: 1901558', "windowText: u'Annie'", "displayText: u'Annie'", 'treeInterceptor: None', 'processID: 10920'].
+2014-12-30 18:13:18,618 [automa.api_impl] [INFO] - write(u'Percik')
+2014-12-30 18:13:18,624 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Work window: <ManagedWindow(handle=656664) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=10920, name='wordpad.exe') at 79776912>>
+2014-12-30 18:13:19,007 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - New foreground process: 10920
+2014-12-30 18:13:19,009 [automa.api_impl.gui_automation.wait_after_action] [DEBUG] - Adding <Process(pid=10920, name='wordpad.exe') at 81184912> to the list of waited for processes.
+2014-12-30 18:13:19,357 [automa.api_impl.gui_automation.window_manager] [DEBUG] - Updating work window to <ManagedWindow(handle=656664) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=10920, name='wordpad.exe') at 81184784>>.
+2014-12-30 18:13:19,400 [automa.api_impl.gui_automation.managed_window] [DEBUG] - Updated focus object of <ManagedWindow(handle=656664) with title u'Document - WordPad' at location <RECT L156, T156, R924, B681> belonging to <Process(pid=10920, name='wordpad.exe') at 81184720>> to ["name: u'Rich Text Window'", 'role: ROLE_EDITABLETEXT', 'states: STATE_MULTILINE, STATE_FOCUSABLE, STATE_FOCUSED', 'Python object: <NVDAObjects.Dynamic_IAccessibleRichEdit50WindowNVDAObject object at 0x04BFAA50>', 'description: None', 'location: (164, 332, 752, 315)', "value: u'AnniePercik\\r'", 'windowHandle: 1901558', "windowText: u'AnniePercik'", "displayText: u'AnniePercik'", 'treeInterceptor: None', 'processID: 10920'].

@@ -1,7 +1,7 @@
 {
   "names": { 
     "Params": [{"Text": "Firstname"}, {"Text": "Secondname"}], 
-    "Steps":  [{"Type": "$Firstname"}, {"Type": "$Secondname"}]
+    "Steps":  [{"Type": "Name:"}, {"Type": "$Firstname"}, {"Type": " "}, {"Type": "$Secondname"}, {"Type": "\n"}]
   }, 
   "help": { 
     "Params": [], 

@@ -5,6 +5,6 @@
   }, 
   "save": { 
     "Params": [], 
-    "Steps":  [{"Click": "File"}, {"Click": "Save"}, {"Click": "Save"}, {"Type": "\t"}, {"Type": "\n"}]
+    "Steps":  [{"Click": "File"}, {"Click": "Save"}, {"Click": "Save"}]
   }
 }

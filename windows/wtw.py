@@ -23,8 +23,6 @@ def start_apps(app_commands):
     start(app_name)
  
 def handle_command(message, app_commands):
-  print(message)
-  print "Handling app " + message["App"] + " command " + message["Command"]
   steps = app_commands[message["App"]][message["Command"]]["Steps"]
   for step in steps:
     handle_step(message, step)
@@ -44,7 +42,7 @@ def click_command(message, step):
     clickable = message[var_name] 
   else:
     clickable = step["Click"]
-  print "Clicking on : " + clickable 
+    click(clickable)
  
 def type_command(message, step):
   type_text = ""
@@ -53,5 +51,4 @@ def type_command(message, step):
     type_text = message[var_name]
   else:
     type_text = step["Type"]
-  print "Typing : " + type_text
   write(type_text)

@@ -1,10 +1,10 @@
 {
   "names": { 
     "Params": [{"Text": "Firstname"}, {"Text": "Secondname"}], 
-    "Steps":  [{"Type": "Name:"}, {"Type": "$Firstname"}, {"Type": " "}, {"Type": "$Secondname"}, {"Type": "\n"}]
+    "Steps":  [{"Type": "Name: "}, {"Type": "$Firstname"}, {"Type": " "}, {"Type": "$Secondname"}, {"Type": "\n"}]
   }, 
-  "help": { 
+  "save": { 
     "Params": [], 
-    "Steps":  [{"Click": "Help"}, {"Click": "About"}]
+    "Steps":  [{"Click": "File"}, {"Click": "Save"}, {"Click": "Save"}, {"Click": "Yes"}]
   }
 }

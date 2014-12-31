@@ -1,7 +1,7 @@
 {
   "address": { 
     "Params": [{"Text": "First_line"}, {"Text": "Second_line"}, {"Text": "Third_line"}, {"Text": "Postcode"}], 
-    "Steps":  [{"Type": "Address: "}, {"Type": "$First_line"}, {"Type": " "}, {"Type": "$Second_line"}, {"Type": " "}, {"Type": "$Third_line"}, {"Type": " "}, {"Type": "$Postcode"}, {"Type": "\n"}]
+    "Steps":  [{"Type": "Address: "}, {"Type": "$First_line"}, {"Type": ", "}, {"Type": "$Second_line"}, {"Type": ", "}, {"Type": "$Third_line"}, {"Type": ", "}, {"Type": "$Postcode"}, {"Type": ".\n"}]
   }, 
   "print": { 
     "Params": [], 

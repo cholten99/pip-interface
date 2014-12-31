@@ -1,18 +1,20 @@
-from automa.api import *
-import json 
-import pprint
+# Setup
+import os
+import sys
+import json
 import ast
-from os import listdir
-from os.path import isfile, join
+import pprint
+sys.path.append(os.getcwd() + os.path.sep + 'automa\library.zip')
+from automa.api import *
 
-# Load the commands YAML
+# Load the commands json
 def load_commands():
   path = "../scripts/"
   app_commands = {}
-  app_command_files = [ f for f in listdir(path) if isfile(join(path, f)) ]
+  app_command_files = [ f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) ]
   for app_command_file in app_command_files:
     app_name = app_command_file[:app_command_file.index('.')]
-    file_handle = open(join(path, app_command_file))
+    file_handle = open(os.path.join(path, app_command_file))
     app_commands[app_command_file[:app_command_file.index('.')]] = json.load(file_handle)
   return(app_commands)
 
